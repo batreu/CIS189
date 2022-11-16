@@ -1,4 +1,4 @@
-class Student:
+class student:
     """
     Brandon Treu 900704435
     Student class
@@ -11,9 +11,9 @@ class Student:
         self.last_name = lname
         self.first_name = fname
         self.major = major
-        if not isinstance(gpa, float):  # check gpa is float
+        if not isinstance(gpa, float):
             raise ValueError
-        if gpa < 0 or gpa > 4:  # check gpa in range
+        if gpa < 0 or gpa > 4:
             raise ValueError('gpa out of range')
         self.gpa = gpa
 
@@ -29,5 +29,5 @@ class Student:
 
 
 # Driver
-student = Student('Ovechkin', 'Alex', 'Goal Scoring', 4.0)
+student = student('Treu', 'Brandon', 'Coding', 4.0)
 print(repr(student))
