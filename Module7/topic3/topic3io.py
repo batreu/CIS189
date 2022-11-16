@@ -8,7 +8,7 @@ the .txt file, it will take user input and lastly update information on the file
 
 # Write to a file before read from a file
 def write_to_file(info_file):
-    f = open('student_info.txt', 'a')
+    f = open('test_scores.txt', 'a')
     f.write(str(info_file))
     f.close()
 
@@ -32,7 +32,7 @@ def get_student_info(**scores):
 
 # read
 def read_from_file():
-    f = open('student_info.txt', "r")
+    f = open('test_scores.txt', "r")
     line = f.readline()
     print(line)
     f.close()
